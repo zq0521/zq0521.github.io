@@ -20,28 +20,35 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="LeetCode-70: 爬楼梯假设你正在爬楼梯。需要 n 阶你才能到达楼顶。 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？ 示例1： 12345输入：n &#x3D; 2输出：2解释：有两种方法可以爬到楼顶。1. 1 阶 + 1 阶2. 2 阶  示例2： 123456输入：n &#x3D; 3输出：3解释：有三种方法可以爬到楼顶。1. 1 阶 + 1 阶 + 1 阶2. 1 阶 + 2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="‘数据结构与算法-爬楼梯’">
+<meta property="og:url" content="http://example.com/2022/05/26/%E2%80%98%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E7%88%AC%E6%A5%BC%E6%A2%AF%E2%80%99/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="LeetCode-70: 爬楼梯假设你正在爬楼梯。需要 n 阶你才能到达楼顶。 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？ 示例1： 12345输入：n &#x3D; 2输出：2解释：有两种方法可以爬到楼顶。1. 1 阶 + 1 阶2. 2 阶  示例2： 123456输入：n &#x3D; 3输出：3解释：有三种方法可以爬到楼顶。1. 1 阶 + 1 阶 + 1 阶2. 1 阶 + 2">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2022/05/26/%E2%80%98%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E7%88%AC%E6%A5%BC%E6%A2%AF%E2%80%99/image-20220526111715063.png">
+<meta property="article:published_time" content="2022-05-26T04:18:03.000Z">
+<meta property="article:modified_time" content="2022-05-26T04:30:59.657Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="数据结构与算法">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/05/26/%E2%80%98%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E7%88%AC%E6%A5%BC%E6%A2%AF%E2%80%99/image-20220526111715063.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2022/05/26/%E2%80%98%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E7%88%AC%E6%A5%BC%E6%A2%AF%E2%80%99/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>‘数据结构与算法-爬楼梯’ | Hexo</title>
   
 
 
@@ -139,72 +146,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/26/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/05/26/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/" class="post-title-link" itemprop="url">斐波那契数列</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-05-26 15:00:25 / Modified: 15:02:16" itemprop="dateCreated datePublished" datetime="2022-05-26T15:00:25+08:00">2022-05-26</time>
-            </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项（即 F(N)）。斐波那契数列的定义如下：</p>
-<p>F(0) &#x3D; 0,   F(1) &#x3D; 1<br>F(N) &#x3D; F(N - 1) + F(N - 2), 其中 N &gt; 1.<br>斐波那契数列由 0 和 1 开始，之后的斐波那契数就是由之前的两数相加而得出。</p>
-<p>答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。</p>
-<p>代码：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Fibonacci</span> &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Map&lt;Integer, Integer&gt; storeMap = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">    <span class="keyword">final</span> <span class="type">int</span> <span class="variable">MOD</span> <span class="operator">=</span> <span class="number">1000000007</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用递归</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">fib</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (storeMap.get(n) != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> storeMap.get(n);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> fib(n - <span class="number">2</span>) + fib(n - <span class="number">1</span>);</span><br><span class="line">            result = result % <span class="number">1000000007</span>;</span><br><span class="line">            storeMap.put(n, result);</span><br><span class="line">            <span class="keyword">return</span> result;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用循环</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">fobonacciWithIteror</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        <span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">pre</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">prePre</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">2</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">            prePre = pre;</span><br><span class="line">            pre = result;</span><br><span class="line">            result = (pre + prePre) % MOD;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -220,10 +165,9 @@
       <meta itemprop="name" content="Hexo">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/05/26/%E2%80%98%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E7%88%AC%E6%A5%BC%E6%A2%AF%E2%80%99/" class="post-title-link" itemprop="url">‘数据结构与算法-爬楼梯’</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          ‘数据结构与算法-爬楼梯’
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -247,7 +191,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="LeetCode-70-爬楼梯"><a href="#LeetCode-70-爬楼梯" class="headerlink" title="LeetCode-70: 爬楼梯"></a>LeetCode-70: 爬楼梯</h3><p>假设你正在爬楼梯。需要 <code>n</code> 阶你才能到达楼顶。</p>
+        <h3 id="LeetCode-70-爬楼梯"><a href="#LeetCode-70-爬楼梯" class="headerlink" title="LeetCode-70: 爬楼梯"></a>LeetCode-70: 爬楼梯</h3><p>假设你正在爬楼梯。需要 <code>n</code> 阶你才能到达楼顶。</p>
 <p>每次你可以爬 <code>1</code> 或 <code>2</code> 个台阶。你有多少种不同的方法可以爬到楼顶呢？</p>
 <p>示例1：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">输入：n = 2</span><br><span class="line">输出：2</span><br><span class="line">解释：有两种方法可以爬到楼顶。</span><br><span class="line">1. 1 阶 + 1 阶</span><br><span class="line">2. 2 阶</span><br></pre></td></tr></table></figure>
@@ -280,175 +224,36 @@
 
 
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" rel="tag"># 数据结构与算法</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/24/hello-world/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/05/24/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-05-24 17:21:36" itemprop="dateCreated datePublished" datetime="2022-05-24T17:21:36+08:00">2022-05-24</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/05/24/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/05/26/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/" rel="next" title="斐波那契数列">
+      斐波那契数列 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/24/mysql%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/24/mysql%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89/" class="post-title-link" itemprop="url">mysql优化——Explain工具的使用</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-05-24 18:30:42" itemprop="dateCreated datePublished" datetime="2021-05-24T18:30:42+08:00">2021-05-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-05-24 19:23:47" itemprop="dateModified" datetime="2022-05-24T19:23:47+08:00">2022-05-24</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Explain详解"><a href="#Explain详解" class="headerlink" title="Explain详解"></a>Explain详解</h2><h3 id="Explain工具介绍"><a href="#Explain工具介绍" class="headerlink" title="Explain工具介绍"></a>Explain工具介绍</h3><p>​	使用EXPLAIN关键字可以模拟优化器执行SQL语句，分析你的查询语句或是结构的性能瓶颈；<br>​	在 select 语句之前增加 explain 关键字，MySQL 会在查询上设置一个标记，执行查询会返回执行计划的信息，而不是<br>执行这条SQL；<br>​	注意：如果 from 中包含子查询，仍会执行该子查询，将结果放入临时表中  </p>
-<p>###2.Explain分析实例</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">#示例表：</span><br><span class="line">DROP TABLE IF EXISTS `actor`;</span><br><span class="line">CREATE TABLE `actor` (</span><br><span class="line">`id` int(11) NOT NULL,</span><br><span class="line">`name` varchar(45) DEFAULT NULL,</span><br><span class="line">`update_time` datetime DEFAULT NULL,</span><br><span class="line">PRIMARY KEY (`id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8;</span><br><span class="line"></span><br><span class="line">INSERT INTO `actor` (`id`, `name`, `update_time`) VALUES (1,&#x27;a&#x27;,&#x27;2020-5-24 19:16:10&#x27;), (2,&#x27;b&#x27;,&#x27;2020-5-24 19:16:11&#x27;), (3,&#x27;c&#x27;,&#x27;2020-5-24 19:16:12&#x27;);</span><br><span class="line"></span><br><span class="line">DROP TABLE IF EXISTS `film`;</span><br><span class="line">CREATE TABLE `film` (</span><br><span class="line">`id` int(11) NOT NULL AUTO_INCREMENT,</span><br><span class="line">`name` varchar(10) DEFAULT NULL,</span><br><span class="line">PRIMARY KEY (`id`),</span><br><span class="line">KEY `idx_name` (`name`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8;</span><br><span class="line"></span><br><span class="line">INSERT INTO `film` (`id`, `name`) VALUES (3,&#x27;film0&#x27;),(1,&#x27;film1&#x27;),(2,&#x27;film2&#x27;);</span><br><span class="line"></span><br><span class="line">DROP TABLE IF EXISTS `film_actor`;</span><br><span class="line">CREATE TABLE `film_actor` (</span><br><span class="line">`id` int(11) NOT NULL,</span><br><span class="line">`film_id` int(11) NOT NULL,</span><br><span class="line">`actor_id` int(11) NOT NULL,</span><br><span class="line">`remark` varchar(255) DEFAULT NULL,</span><br><span class="line">PRIMARY KEY (`id`),</span><br><span class="line">KEY `idx_film_actor_id` (`film_id`,`actor_id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8;</span><br><span class="line"></span><br><span class="line">INSERT INTO `film_actor` (`id`, `film_id`, `actor_id`) VALUES (1,1,1),(2,1,2),(3,2,1);</span><br></pre></td></tr></table></figure>
-
-
-
-<ul>
-<li><strong>使用explain查询示例</strong>：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">explain select * from actor;</span><br></pre></td></tr></table></figure>
-
-<p><img src="C:/Users/张强/AppData/Roaming/Typora/typora-user-images/image-20220524191833821.png" alt="image-20220524191833821"></p>
-<p>注意：在查询中的每个表会输出一行，如果有两个表通过join连接查询，那么会输出两行;</p>
-<ul>
-<li><strong>explain两个变种</strong><ul>
-<li>explain extended  : 会在 explain 的基础上额外提供一些查询优化的信息。紧随其后通过 show warnings 命令可<br>以得到优化后的查询语句，从而看出优化器优化了什么。额外还有 filtered 列，是一个半分比的值，rows *<br>filtered&#x2F;100 可以<strong>估算</strong>出将要和 explain 中前一个表进行连接的行数（前一个表指 explain 中的id值比当前表id值小的<br>表）</li>
-<li></li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -501,6 +306,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#LeetCode-70-%E7%88%AC%E6%A5%BC%E6%A2%AF"><span class="nav-number">1.</span> <span class="nav-text">LeetCode-70: 爬楼梯</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">解题思路：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">代码实现：</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
